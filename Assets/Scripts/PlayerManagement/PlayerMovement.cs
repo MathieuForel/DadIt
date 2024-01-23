@@ -125,6 +125,5 @@ public class PlayerMovement : MonoBehaviour
                 isMojo = true;
             }
         }
-        else if ()
     }
 }
