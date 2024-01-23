@@ -13,7 +13,7 @@ public class timer : MonoBehaviour
     private float timeLeft;
     void Start()
     {
-        timeLeft = Time.time + 10;
+        timeLeft = Time.time + 180;
     }
 
     // Update is called once per frame
