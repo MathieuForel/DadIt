@@ -237,21 +237,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3970341859945525326, guid: 593c2957be88b274b809ebbc9a6432e0,
-        type: 3}
-      propertyPath: isMoving
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3970341859945525326, guid: 593c2957be88b274b809ebbc9a6432e0,
-        type: 3}
-      propertyPath: playerSpeeds.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3970341859945525326, guid: 593c2957be88b274b809ebbc9a6432e0,
-        type: 3}
-      propertyPath: playerSpeeds.Array.data[1]
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 7149191680779273033, guid: 593c2957be88b274b809ebbc9a6432e0,
         type: 3}
       propertyPath: m_Name
