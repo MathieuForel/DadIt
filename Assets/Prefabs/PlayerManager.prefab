@@ -397,6 +397,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7806488942248734340}
+  - component: {fileID: 8321708930205909088}
   m_Layer: 0
   m_Name: PlayerManager
   m_TagString: Untagged
@@ -421,6 +422,19 @@ Transform:
   - {fileID: 8425210869354758081}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8321708930205909088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7149191680779273033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fd14346da9b22b4396ac10abad89b23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 0}
 --- !u!1 &8150660633063514135
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,11 +487,7 @@ MonoBehaviour:
   moveSpeed: 0
   playerSpeeds:
   - 3
-  - 5
   - 8
-  - 10
-  - 12.5
-  - 0.1
   isMoving: 0
   dashSpeed: 15
   dashTimeOut: 2
