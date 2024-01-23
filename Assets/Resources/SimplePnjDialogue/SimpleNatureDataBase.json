@@ -1,0 +1,14 @@
+{
+  "dataBase":
+  [
+    {
+      "sentence": "JohnBIO"
+    },
+    {
+      "sentence": "AnnaBIO"
+    },
+    {
+      "sentence": "PeterBIO"
+    }
+  ]
+}
