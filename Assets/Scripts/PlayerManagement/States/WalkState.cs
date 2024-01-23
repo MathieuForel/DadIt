@@ -26,25 +26,5 @@ public class WalkState : PlayerBaseState
         {
             sm.TransitionTo(sm.groundedState);
         }
-        else if (p.isMoving && Input.GetKey(p.sprintKey))
-        {
-            sm.TransitionTo(sm.runState);
-        }
-        else if (p.isMoving && Input.GetKey(p.slideKey) && p.canSlide)
-        {
-            sm.TransitionTo(sm.slideState);
-        }
-        else if (p.isMoving && Input.GetKeyDown(p.dashKey) && p.canDash)
-        {
-            sm.TransitionTo(sm.dashState);
-        }
-        else if (p.isMoving && Input.GetKeyDown(p.crouchKey))
-        {
-            sm.TransitionTo(sm.crouchState);
-        }
-        else if (Input.GetKeyDown(p.jumpKey))
-        {
-            sm.TransitionTo(sm.jumpState);
-        }
     }
 }

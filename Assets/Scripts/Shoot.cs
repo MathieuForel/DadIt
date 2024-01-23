@@ -35,7 +35,7 @@ public class Shoot : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, range))
             {
-                if (hit.collider.CompareTag("Damagable"))
+                if (hit.collider.CompareTag("Damageable"))
                 {
                     Debug.Log("Hit");
                 }

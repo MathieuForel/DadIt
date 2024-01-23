@@ -25,13 +25,5 @@ public class GroundedState : PlayerBaseState
         {
             sm.TransitionTo(sm.walkState);
         }
-        else if (Input.GetKeyDown(p.jumpKey))
-        {
-            sm.TransitionTo(sm.jumpState);
-        }
-        else if (Input.GetKey(p.crouchKey))
-        {
-            sm.TransitionTo(sm.crouchState);
-        }
     }
 }
