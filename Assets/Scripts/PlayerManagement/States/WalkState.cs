@@ -17,7 +17,7 @@ public class WalkState : PlayerBaseState
     }
     public override void FixedUpdate()
     {
-        p.rb.AddForce(p.moveDirection * p.playerSpeeds[1], ForceMode.Force);
+        p.rb.AddForce(p.moveDirection * p.playerSpeeds[0], ForceMode.Force);
     }
 
     public override void CheckSwitch()

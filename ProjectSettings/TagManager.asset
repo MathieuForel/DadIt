@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Damageable
+  - Beer
+  - Bundle1
+  - Bundle2
+  - Bundle3
   layers:
   - Default
   - TransparentFX
