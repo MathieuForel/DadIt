@@ -2,13 +2,34 @@
   "dataBase":
   [
     {
-      "sentence": "ball is so funny"
+      "sentence": "I used to play piano by ear,\n but now I just use my hands"
     },
     {
-      "sentence": "baseball bat so cool"
+      "sentence": "Geez my bike won't stop falling.\n It's *two-tired*"
     },
     {
-      "sentence": "footballin'"
+      "sentence": "Guys I'm so tired of gravity.\n Can we drop it?"
+    },
+    {
+      "sentence": "Hey how do you organize a space-party?\n You *planet*"
+    },
+    {
+      "sentence": "Football players bring strings to the game,\n that's how they tie the score"
+    },
+    {
+      "sentence": "Did you hear about the fire at the circus?\n It was *in tents*!"
+    },
+    {
+      "sentence": "I used to play tennis,\n but it started to feel like *racket-eering*"
+    },
+    {
+      "sentence": "I wanted to be a baker.\n That's when I *kneaded dough*"
+    },
+    {
+      "sentence": "I told Susan ten jokes to make her laugh.\n Sadly, *no pun in ten did*"
+    },
+    {
+      "sentence": "What are the rules for zebra baseball?\n Three stripes and you're out"
     }
   ]
 }

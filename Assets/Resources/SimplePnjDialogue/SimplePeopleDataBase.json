@@ -2,13 +2,34 @@
   "dataBase":
   [
     {
-      "sentence": "JohnGUY"
+      "sentence": "You know my aunt Minnie is so ill..."
     },
     {
-      "sentence": "AnnaGUY"
+      "sentence": "How could I know if I'm a good person?"
     },
     {
-      "sentence": "PeterGUY"
+      "sentence": "My house feels so empty now..."
+    },
+    {
+      "sentence": "I think I offended my pastor..."
+    },
+    {
+      "sentence": "Wait, do I have a purpose?"
+    },
+    {
+      "sentence": "You know my dad was an alcoholic?"
+    },
+    {
+      "sentence": "Is there an afterlife for real, or...?"
+    },
+    {
+      "sentence": "When did I start getting old?"
+    },
+    {
+      "sentence": "I don't think my kids like me..."
+    },
+    {
+      "sentence": "I might have anxiety for real..."
     }
   ]
 }

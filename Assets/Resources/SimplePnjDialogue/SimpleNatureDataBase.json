@@ -2,13 +2,34 @@
   "dataBase":
   [
     {
-      "sentence": "JohnBIO"
+      "sentence": "Well my dog recently passed away..."
     },
     {
-      "sentence": "AnnaBIO"
+      "sentence": "Geez I think Global Warming is real..."
     },
     {
-      "sentence": "PeterBIO"
+      "sentence": "All my plants died and I'm actually sad..."
+    },
+    {
+      "sentence": "I wish I was a worm honestly..."
+    },
+    {
+      "sentence": "Why do we have to kill all these trees?"
+    },
+    {
+      "sentence": "I think I'm afraid of kittens..."
+    },
+    {
+      "sentence": "Mushrooms puzzle me so much, man..."
+    },
+    {
+      "sentence": "Why are there so much types of fishes?"
+    },
+    {
+      "sentence": "Cute pets kind of disgust me..."
+    },
+    {
+      "sentence": "Nature is lame but also, so interesting?"
     }
   ]
 }

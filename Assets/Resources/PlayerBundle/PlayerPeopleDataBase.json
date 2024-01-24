@@ -2,13 +2,34 @@
   "dataBase":
   [
     {
-      "sentence": "goofy ah"
+      "sentence": "You know why skeletons don't fight?\n They don't have the guts"
     },
     {
-      "sentence": "we need to build a wall"
+      "sentence": "How do you call a fake Italian?\n An *impasta*"
     },
     {
-      "sentence": "Peter Griffin"
+      "sentence": "My friend from Alaska is building a house.\n *Igloos* it together"
+    },
+    {
+      "sentence": "My boy tried to catch some fog yesterday.\n He *mist*"
+    },
+    {
+      "sentence": "The cheese factory exploded.\n There was nothing left but *de-brie*"
+    },
+    {
+      "sentence": "Why do therapists can't go on planes?\n Too much emotional baggage"
+    },
+    {
+      "sentence": "What do you call cheese that isn't yours?\n *Nacho* cheese"
+    },
+    {
+      "sentence": "What do you call a belt with a watch on it?\n A *waist* of time"
+    },
+    {
+      "sentence": "What did one hat say to another?\n \"Stay here, I'm going on ahead\""
+    },
+    {
+      "sentence": "Coffee should avoid this neighborhood;\n it could get mugged"
     }
   ]
 }
