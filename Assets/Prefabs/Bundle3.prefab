@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 2974531537435934702}
   - component: {fileID: -4223275619442029342}
   - component: {fileID: -2998077834614327687}
-  - component: {fileID: 5913198889646140249}
   m_Layer: 0
   m_Name: Bundle3
   m_TagString: Bundle3
@@ -119,7 +118,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: be3bb9ce7459a7f4483c7a40bc00db0f, type: 2}
-  m_CullingMode: 2
+  m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
@@ -141,19 +140,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69fd50b481503874d9b93cfd96abfd26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!111 &5913198889646140249
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1630832566445366605}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 8f7362244899da745879f9eefb922591, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 8f7362244899da745879f9eefb922591, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0

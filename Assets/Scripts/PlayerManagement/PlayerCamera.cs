@@ -7,7 +7,8 @@ public class PlayerCamera : MonoBehaviour
 {
     [SerializeField] private Transform orientation;
     [SerializeField] private Transform cameraPos;
-    [SerializeField] private float playerSens;
+    [SerializeField] public float playerSens;
+    public float maxSens;
 
     private float xRotation, yRotation;
 
@@ -18,6 +19,8 @@ public class PlayerCamera : MonoBehaviour
         Cursor.visible = false;
         //Set Framerate
         Application.targetFrameRate = 144;
+
+        maxSens = playerSens;
     }
 
     // Update is called once per frame

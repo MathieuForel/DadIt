@@ -12,8 +12,7 @@ GameObject:
   - component: {fileID: 6772186076944231469}
   - component: {fileID: 8802072789330242122}
   - component: {fileID: 524863486456815183}
-  - component: {fileID: 2501462148833067670}
-  - component: {fileID: 2874056498315802093}
+  - component: {fileID: 4500525189027737174}
   - component: {fileID: 2402628910779068345}
   m_Layer: 0
   m_Name: Bundle1
@@ -108,23 +107,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!111 &2501462148833067670
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 378435629754887309}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 8f7362244899da745879f9eefb922591, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 8f7362244899da745879f9eefb922591, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
---- !u!95 &2874056498315802093
+--- !u!95 &4500525189027737174
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -135,7 +118,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: be3bb9ce7459a7f4483c7a40bc00db0f, type: 2}
-  m_CullingMode: 2
+  m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0

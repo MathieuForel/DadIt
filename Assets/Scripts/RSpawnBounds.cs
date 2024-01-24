@@ -29,7 +29,7 @@ public class RSpawnBounds : MonoBehaviour
             bundleNum[i] = Random.Range(2, 4);
         }
 
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 3; i++) // 3 zones
         {
             //Instantiate Beers
             for (int x = 0; x < propsNum; x++)
@@ -45,6 +45,7 @@ public class RSpawnBounds : MonoBehaviour
                 spawnPoint = GetRandomPosition(i);
                 
                 var spawned = Instantiate(bundles[i], spawnPoint, Quaternion.identity);
+                spawned.transform.position = spawnPoint;
             }
         }
     }
@@ -54,7 +55,7 @@ public class RSpawnBounds : MonoBehaviour
         Collider randomArea = spawnArea[index];
         
         float x = Random.Range(randomArea.bounds.min.x, randomArea.bounds.max.x);
-        float z = Random.Range(randomArea.bounds.min.x, randomArea.bounds.max.x);
+        float z = Random.Range(randomArea.bounds.min.z, randomArea.bounds.max.z);
         
         return new Vector3(x, randomArea.bounds.max.y, z);
     }

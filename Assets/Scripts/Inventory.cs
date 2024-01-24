@@ -5,9 +5,9 @@ using TMPro;
 
 public class Inventory : MonoBehaviour
 {
-    public int animals;
-    public int sports;
-    public int peoples;
+    private int animals;
+    private int sports;
+    private int peoples;
 
     public TMP_Text animal;
     public TMP_Text sport;
