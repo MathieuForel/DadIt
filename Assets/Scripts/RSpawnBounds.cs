@@ -23,7 +23,7 @@ public class RSpawnBounds : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        propsNum = Random.Range(1, 3);
+        propsNum = Random.Range(2, 3);
         for (int i = 0; i < 3; i++)
         {
             bundleNum[i] = Random.Range(2, 4);
@@ -44,7 +44,7 @@ public class RSpawnBounds : MonoBehaviour
             {
                 spawnPoint = GetRandomPosition(i);
                 
-                var spawned = Instantiate(bundles[i], spawnPoint, Quaternion.identity);
+                var spawned = Instantiate(bundles[z], spawnPoint, Quaternion.identity);
                 spawned.transform.position = spawnPoint;
             }
         }

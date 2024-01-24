@@ -13,6 +13,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CollectableEffect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RSpawnBounds.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -101,7 +102,7 @@
       <updated>1706010449630</updated>
       <workItem from="1706010450085" duration="599000" />
       <workItem from="1706095644725" duration="4813000" />
-      <workItem from="1706103091762" duration="6018000" />
+      <workItem from="1706103091762" duration="11927000" />
     </task>
     <servers />
   </component>
