@@ -1,0 +1,35 @@
+{
+  "dataBase":
+  [
+    {
+      "sentence": "I don't feel like talking right now"
+    },
+    {
+      "sentence": "Can you just leave me alone?"
+    },
+    {
+      "sentence": "How's Susan?"
+    },
+    {
+      "sentence": "What do you want?"
+    },
+    {
+      "sentence": "..."
+    },
+    {
+      "sentence": "Get me a beer, would ya?"
+    },
+    {
+      "sentence": "Where is my coat? I want to leave"
+    },
+    {
+      "sentence": "Ugh... What now?"
+    },
+    {
+      "sentence": "Nice weather, uh?"
+    },
+    {
+      "sentence": "Hey Steve"
+    }
+  ]
+}
