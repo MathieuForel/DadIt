@@ -84,17 +84,19 @@ public class EnnemyBundle : MonoBehaviour
         Debug.Log(playerChosenBundle + " =? " + pnjBundleSelected);
         Debug.Log(pnjBundleSelected == playerChosenBundle);
 
-        if(playerChosenBundle == 4)
+        if(playerChosenBundle == 3)
         {
             playerBundle.Score += 100;
+            if(isComplex) playerBundle.Score += 100;
             playerText.color = Color.magenta;
-            this.transform.GetChild(1).GetComponent<TextMesh>().text = ":D";
+            this.transform.GetChild(1).GetComponent<TextMesh>().text = "◠‿◠";
             return;
         }
         
         if(pnjBundleSelected == playerChosenBundle)
         {
             playerBundle.Score += 100;
+            if(isComplex) playerBundle.Score += 100;
             playerText.color = Color.green;
             this.transform.GetChild(1).GetComponent<TextMesh>().text = ":D";
             return;
@@ -104,7 +106,7 @@ public class EnnemyBundle : MonoBehaviour
         {
             playerBundle.Score += 50;
 
-            if (isComplex)
+            if(isComplex)
             {
                 playerBundle.Score -= 100;
                 this.transform.GetChild(1).GetComponent<TextMesh>().text = pnjResponse.dataBase[sentenceSelected].sentence;
