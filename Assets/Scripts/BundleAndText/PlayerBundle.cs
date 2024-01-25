@@ -91,10 +91,8 @@ public class PlayerBundle : MonoBehaviour
         randomOffset = new Vector3(Random.Range(-2f, 3f), Random.Range(-2f, 3f), Random.Range(-2f, 3f));
 
         textProjectile = Instantiate(textProjectilePrefab, this.transform.position, this.gameObject.transform.rotation);
-        //textProjectile.transform.localRotation *= textProjectilePrefab.transform.rotation;
         textProjectile.GetComponent<TextMesh>().text = playerJson.dataBase[randomJoke].sentence;
-        textProjectile.GetComponent<Rigidbody>().AddExplosionForce(explosionForce, this.transform.position - this.transform.forward * 2, explosionRadius);
-        //textProjectile.GetComponent<Rigidbody>().AddExplosionForce(explosionForce2, textProjectile.transform.position - this.transform.forward/*- offset + randomOffset*/, explosionRadius2);
+        textProjectile.GetComponent<Rigidbody>().AddExplosionForce(explosionForce, this.transform.position - this.transform.forward, explosionRadius);
         textProjectile.GetComponent<ProjectileTextBundleInfo>().textBundle = bundleSelected;
     }
 }

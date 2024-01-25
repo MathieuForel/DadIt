@@ -9,12 +9,18 @@ public class lookat : MonoBehaviour
     bool is_in_collider;
     private void OnTriggerEnter(Collider other)
     {
-        is_in_collider = true;
-        target = other.gameObject;
+        if (other.CompareTag("Finish"))
+        {
+            is_in_collider = true;
+            target = other.gameObject;
+        }
     }
     private void OnTriggerExit(Collider other)
     {
-        is_in_collider = false;
+        if (other.CompareTag("Finish"))
+        {
+            is_in_collider = false;
+        }
     }
     private void Update()
     {

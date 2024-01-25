@@ -976,6 +976,7 @@ GameObject:
   - component: {fileID: 6888744563684272715}
   - component: {fileID: 1922346485161972183}
   - component: {fileID: 1970199920297147623}
+  - component: {fileID: 4926948231255795060}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1138,6 +1139,36 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4926948231255795060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5413964689823293005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3303a0aa1dc0e479d71a6afb4816a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BundleList: []
+  playerJson:
+    dataBase: []
+  bundleSelected: 0
+  randomJoke: 0
+  textProjectilePrefab: {fileID: 0}
+  textProjectile: {fileID: 0}
+  explosionForce: 5000
+  explosionRadius: 20
+  explosionForce2: 2000
+  explosionRadius2: 40
+  offset: {x: 5, y: 15, z: 25}
+  randomOffset: {x: 0, y: 0, z: 0}
+  Score: 0
+  textScore: {fileID: 0}
+  bundleShotLogList: 
+  moJokeOMeter: 0
+  isMoJokeModeActivated: 0
 --- !u!1 &5605926947304854800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1963,6 +1994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5ccc49a712f533478c3feef53d8f75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sounds: []
   animal: {fileID: 6673732454487157205}
   sport: {fileID: 2871856404462579024}
   people: {fileID: 2247472025372901668}
