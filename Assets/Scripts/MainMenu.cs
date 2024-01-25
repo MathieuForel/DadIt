@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,5 +23,10 @@ public class MainMenu : MonoBehaviour
     {
         pannel.SetActive(!panelOpened);
         panelOpened = !panelOpened;
+    }
+
+    public void SetPlayerName()
+    {
+        PlayerPrefs.SetString("Name", "Steve");
     }
 }

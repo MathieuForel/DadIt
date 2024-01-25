@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: "Assets/Scenes/Lo\xEFs Scene Menu.unity"
     guid: deafe21fba4fd9c47b831eec3051d45d
   - enabled: 1
+    path: "Assets/Scenes/Lo\xEFs Scene Name.unity"
+    guid: f230ba43511153346962f79d11d37820
+  - enabled: 1
     path: "Assets/Scenes/Lo\xEFs Scene.unity"
     guid: 36c11d10ebba7b44087fec71f81600fe
   m_configObjects: {}
