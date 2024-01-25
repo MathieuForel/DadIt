@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Threading;
-using UnityEditor.Search;
 using UnityEngine;
 
 public class random_generator : MonoBehaviour

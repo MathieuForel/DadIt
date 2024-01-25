@@ -4430,6 +4430,7 @@ GameObject:
   - component: {fileID: 148354555}
   - component: {fileID: 148354554}
   - component: {fileID: 148354556}
+  - component: {fileID: 148354557}
   m_Layer: 0
   m_Name: mob1 neutre
   m_TagString: Untagged
@@ -4516,6 +4517,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36f9e5f7288f26349b35600de089707a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &148354557
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148354553}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 20.480103, y: 20.48, z: 12.17613}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &148729620
 GameObject:
   m_ObjectHideFlags: 0
@@ -19878,6 +19900,7 @@ GameObject:
   - component: {fileID: 674210899}
   - component: {fileID: 674210898}
   - component: {fileID: 674210897}
+  - component: {fileID: 674210900}
   m_Layer: 0
   m_Name: mob1 neutre (1)
   m_TagString: Untagged
@@ -19964,6 +19987,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -24.849, z: 0}
+--- !u!65 &674210900
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674210896}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 20.48, y: 20.48, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &679540570
 GameObject:
   m_ObjectHideFlags: 0
@@ -20353,6 +20397,7 @@ GameObject:
   - component: {fileID: 688311434}
   - component: {fileID: 688311433}
   - component: {fileID: 688311435}
+  - component: {fileID: 688311436}
   m_Layer: 0
   m_Name: mob2 neutre
   m_TagString: Untagged
@@ -20439,6 +20484,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36f9e5f7288f26349b35600de089707a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &688311436
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688311432}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 20.48, y: 20.48, z: 8.555854}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &688585332
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47071,6 +47137,7 @@ GameObject:
   - component: {fileID: 1415004000}
   - component: {fileID: 1415003999}
   - component: {fileID: 1415003998}
+  - component: {fileID: 1415004001}
   m_Layer: 0
   m_Name: mob2 neutre (1)
   m_TagString: Untagged
@@ -47157,6 +47224,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1415004001
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415003997}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 20.48, y: 20.48, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1417709565
 GameObject:
   m_ObjectHideFlags: 0
@@ -59445,6 +59533,7 @@ GameObject:
   - component: {fileID: 1801378583}
   - component: {fileID: 1801378582}
   - component: {fileID: 1801378581}
+  - component: {fileID: 1801378584}
   m_Layer: 0
   m_Name: mob3 neutre (1)
   m_TagString: Untagged
@@ -59531,6 +59620,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 103.377, z: 0}
+--- !u!65 &1801378584
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801378580}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 20.479998, y: 20.48, z: 0.19999999}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1801510301
 GameObject:
   m_ObjectHideFlags: 0
@@ -61973,6 +62083,7 @@ GameObject:
   - component: {fileID: 1863792813}
   - component: {fileID: 1863792812}
   - component: {fileID: 1863792814}
+  - component: {fileID: 1863792815}
   m_Layer: 0
   m_Name: mob3 neutre
   m_TagString: Untagged
@@ -62059,6 +62170,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36f9e5f7288f26349b35600de089707a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1863792815
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863792811}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 20.48, y: 20.48, z: 9.456968}
+  m_Center: {x: 0.0000000048678768, y: 0, z: 0.10000022}
 --- !u!1 &1868814556
 GameObject:
   m_ObjectHideFlags: 0
@@ -68617,6 +68749,7 @@ GameObject:
   - component: {fileID: 2125414027}
   - component: {fileID: 2125414026}
   - component: {fileID: 2125414025}
+  - component: {fileID: 2125414028}
   m_Layer: 0
   m_Name: mob1 neutre (2)
   m_TagString: Untagged
@@ -68703,6 +68836,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -150.958, z: 0}
+--- !u!65 &2125414028
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125414024}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 20.480005, y: 20.48, z: 0.20000005}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2127868578
 PrefabInstance:
   m_ObjectHideFlags: 0
