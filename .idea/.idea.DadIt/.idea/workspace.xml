@@ -47,6 +47,14 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../Unity Builds/Dad-It\DadIt.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\lolof\Documents\Unity Builds\Dad-It" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.10f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\azzre\Documents\GitHub\DadIt -debugCodeOptimization" />
@@ -104,6 +112,7 @@
       <workItem from="1706095644725" duration="4813000" />
       <workItem from="1706103091762" duration="12218000" />
       <workItem from="1706117711480" duration="79000" />
+      <workItem from="1706138826930" duration="3076000" />
     </task>
     <servers />
   </component>
