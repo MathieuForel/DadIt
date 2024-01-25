@@ -53,6 +53,6 @@ public class Shoot : MonoBehaviour
     void Aiming()
     {
         animator.SetBool("isAiming", Input.GetMouseButton(1));
-        pc.playerSens = Input.GetMouseButton(1) ? pc.maxSens / 5f : pc.maxSens;
+        pc.playerSens = Input.GetMouseButton(1) ? pc.maxSens / 2.5f : pc.maxSens;
     }
 }

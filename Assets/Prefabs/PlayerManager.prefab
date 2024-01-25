@@ -498,13 +498,13 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 277938627777697960}
-  - {fileID: 2784152114924603550}
-  - {fileID: 6724560301291046667}
-  - {fileID: 5550418341428992868}
   - {fileID: 1490257687294651091}
+  - {fileID: 2784152114924603550}
   - {fileID: 4150100614539118519}
-  - {fileID: 1350724939198436335}
+  - {fileID: 6724560301291046667}
   - {fileID: 1767260446852692718}
+  - {fileID: 5550418341428992868}
+  - {fileID: 1350724939198436335}
   m_Father: {fileID: 4171825997245532824}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -674,7 +674,7 @@ GameObject:
   - component: {fileID: 8895787973823066307}
   - component: {fileID: 2871856404462579024}
   m_Layer: 0
-  m_Name: PeopleText
+  m_Name: SportText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -696,7 +696,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 106, y: -331}
+  m_AnchoredPosition: {x: -317.7, y: -328}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8895787973823066307
@@ -862,7 +862,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -105, y: -330}
+  m_AnchoredPosition: {x: -114.7, y: -332.1}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6894347511365407324
@@ -1800,8 +1800,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_AnchoredPosition: {x: 385, y: -63}
+  m_SizeDelta: {x: 1600, y: 900}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2971030543538447742
 CanvasRenderer:
@@ -1892,12 +1892,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 0
   playerSpeeds:
-<<<<<<< HEAD
-  - 3
-  - 8
-=======
   - 5
->>>>>>> 8695f5fb56e8fb7a80817b5def3f06428d777bc1
   isMoving: 0
   groundDrag: 3
   playerHeight: 1
@@ -1971,12 +1966,15 @@ MonoBehaviour:
   animal: {fileID: 6673732454487157205}
   sport: {fileID: 2871856404462579024}
   people: {fileID: 2247472025372901668}
-  fillAmount: {fileID: 0}
-  pm: {fileID: 0}
-  mojoTimer: 0
-  pos: []
+  fillAmount: {fileID: 2160748531422205796}
+  pm: {fileID: 3970341859945525326}
+  mojoTimer: 15
+  pos:
+  - {x: -37, y: -63, z: 0}
+  - {x: 176, y: -63, z: 0}
+  - {x: 387, y: -63, z: 0}
   currentIndex: 0
-  select: {fileID: 0}
+  select: {fileID: 1490257687294651091}
 --- !u!1 &8899081993312070897
 GameObject:
   m_ObjectHideFlags: 0
@@ -2020,7 +2018,7 @@ GameObject:
   - component: {fileID: 3874253745311843598}
   - component: {fileID: 2247472025372901668}
   m_Layer: 0
-  m_Name: SportText
+  m_Name: PeopleText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2042,7 +2040,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -317, y: -334}
+  m_AnchoredPosition: {x: 105.2, y: -328.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3874253745311843598
