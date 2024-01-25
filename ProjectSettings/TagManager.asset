@@ -9,6 +9,8 @@ TagManager:
   - Bundle1
   - Bundle2
   - Bundle3
+  - Undefined
+  - PlayerTextBundle
   layers:
   - Default
   - TransparentFX
