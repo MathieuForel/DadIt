@@ -23,13 +23,13 @@ public class RSpawnBounds : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        propsNum = Random.Range(2, 3);
-        for (int i = 0; i < 3; i++)
+        propsNum = 1;
+        for (int i = 0; i < 8; i++)
         {
-            bundleNum[i] = Random.Range(2, 4);
+            bundleNum[i] = 2;
         }
 
-        for (int i = 0; i < 3; i++) // 3 zones
+        for (int i = 0; i < 8; i++) // 3 zones
         {
             //Instantiate Beers
             for (int x = 0; x < propsNum; x++)
