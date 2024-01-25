@@ -10,6 +10,8 @@ public class Inventory : MonoBehaviour
     private int sports;
     private int peoples;
 
+    public AudioSource[] sounds;
+
     public TMP_Text animal;
     public TMP_Text sport;
     public TMP_Text people;
@@ -69,16 +71,19 @@ public class Inventory : MonoBehaviour
         {
             Destroy(col.gameObject);
             sports++;
+            sounds[0].Play();
         }
         if (col.gameObject.CompareTag("Bundle2"))
         {
             Destroy(col.gameObject);
             peoples++;
+            sounds[1].Play();
         }
         if (col.gameObject.CompareTag("Bundle3"))
         {
             Destroy(col.gameObject);
             animals++;
+            sounds[2].Play();
         }
 
         if (beerNum < 4 && col.gameObject.CompareTag("Beer"))
@@ -88,9 +93,15 @@ public class Inventory : MonoBehaviour
             fillAmount.fillAmount += 0.25f;
             beerNum++;
             
+            
             if (beerNum == 4)
             {
                 pm.isMojo = true;
+                sounds[4].Play();
+            }
+            else
+            {
+                sounds[3].Play();
             }
         }
 
