@@ -13,6 +13,8 @@ public class EnnemyBundle : MonoBehaviour
     public Sentences pnjResponse;
     public int pnjBundleSelected;
     public int sentenceSelected;
+
+    public TextMesh texto;
     
     public PlayerBundle playerBundle;
     public ProjectileTextBundleInfo projectileTextBundleInfo;
@@ -67,7 +69,9 @@ public class EnnemyBundle : MonoBehaviour
             collision.transform.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
             collision.transform.GetComponent<BoxCollider>().isTrigger = true;
             
-            playerText = collision.transform.GetComponent<TextMesh>();
+            texto = collision.transform.GetComponent<TextMesh>();
+
+            playerText.text = texto.text;
             
             projectileTextBundleInfo = collision.transform.GetComponent<ProjectileTextBundleInfo>();
             projectileTextBundleInfo.isFading = false;
