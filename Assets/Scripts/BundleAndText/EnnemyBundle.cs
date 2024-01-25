@@ -89,7 +89,7 @@ public class EnnemyBundle : MonoBehaviour
             playerBundle.Score += 100;
             if(isComplex) playerBundle.Score += 100;
             playerText.color = Color.magenta;
-            this.transform.GetChild(1).GetComponent<TextMesh>().text = "◠‿◠";
+            this.transform.GetChild(1).GetComponent<TextMesh>().text = "xD";
             return;
         }
         
