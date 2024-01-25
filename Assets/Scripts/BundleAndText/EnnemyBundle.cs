@@ -7,8 +7,10 @@ using Random = UnityEngine.Random;
 public class EnnemyBundle : MonoBehaviour
 {
     public TextAsset[] topicList;
+    public TextAsset complexResponse;
     
     public Sentences pnjJson;
+    public Sentences pnjResponse;
     public int pnjBundleSelected;
     public int sentenceSelected;
     
@@ -19,10 +21,12 @@ public class EnnemyBundle : MonoBehaviour
     public float deSpawnTimer;
 
     public bool hasTalked;
+    public bool isComplex;
     
     public void Awake()
     {
         topicList = Resources.LoadAll<TextAsset>("SimplePnjDialogue");
+        if(isComplex) complexResponse = Resources.Load<TextAsset>("ComplexPnjDialogue/ComplexPeopleDataBase");
         playerBundle = GameObject.FindWithTag("Player").GetComponent<PlayerBundle>();
     }
 
@@ -42,6 +46,7 @@ public class EnnemyBundle : MonoBehaviour
         pnjBundleSelected = Random.Range(0, 3);
 
         pnjJson = JsonUtility.FromJson<Sentences>(topicList[pnjBundleSelected].text);
+        if(isComplex) pnjResponse = JsonUtility.FromJson<Sentences>(complexResponse.text);
 
         sentenceSelected = Random.Range(0, pnjJson.dataBase.Length);
 
@@ -83,6 +88,7 @@ public class EnnemyBundle : MonoBehaviour
         {
             playerBundle.Score += 100;
             playerText.color = Color.magenta;
+            this.transform.GetChild(1).GetComponent<TextMesh>().text = ":D";
             return;
         }
         
@@ -90,12 +96,23 @@ public class EnnemyBundle : MonoBehaviour
         {
             playerBundle.Score += 100;
             playerText.color = Color.green;
+            this.transform.GetChild(1).GetComponent<TextMesh>().text = ":D";
             return;
         }
 
         if((pnjBundleSelected + 4) % 3 == playerChosenBundle)
         {
             playerBundle.Score += 50;
+
+            if (isComplex)
+            {
+                playerBundle.Score -= 100;
+                this.transform.GetChild(1).GetComponent<TextMesh>().text = pnjResponse.dataBase[sentenceSelected].sentence;
+            }
+            else
+            {
+                this.transform.GetChild(1).GetComponent<TextMesh>().text = ":)";
+            }
             playerText.color = Color.yellow;
             return;
         }
@@ -103,6 +120,16 @@ public class EnnemyBundle : MonoBehaviour
         if((pnjBundleSelected + 2) % 3 == playerChosenBundle)
         {
             playerBundle.Score += 20;
+            
+            if(isComplex)
+            {
+                playerBundle.Score -= 150;
+                this.transform.GetChild(1).GetComponent<TextMesh>().text = pnjResponse.dataBase[sentenceSelected].sentence;
+            }
+            else
+            {
+                this.transform.GetChild(1).GetComponent<TextMesh>().text = ":|";
+            }
             playerText.color = Color.red;
             return;
         }
@@ -117,7 +144,15 @@ public class EnnemyBundle : MonoBehaviour
             if (deSpawnTimer <= 0)
             {
                 //to be removed
-                Instantiate(Resources.Load<GameObject>("Pnjs/SimplePnj"));
+                if (!isComplex)
+                {
+                    Instantiate(Resources.Load<GameObject>("Pnjs/SimplePnj"));
+                }
+                else
+                {
+                    Instantiate(Resources.Load<GameObject>("Pnjs/ComplexPnj"));
+                }
+
                 StopAllCoroutines();
                 Destroy(this.gameObject);
             }
