@@ -20,7 +20,10 @@ public class lookat : MonoBehaviour
     {
         if (is_in_collider)
         {
-            target.transform.LookAt(gameObject.transform.position, Vector3.up);
+            try
+            {
+                target.transform.LookAt(gameObject.transform.position, Vector3.up);
+            }catch(MissingReferenceException){}
         }
     }
 }
