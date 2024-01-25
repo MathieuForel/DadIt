@@ -27,6 +27,7 @@ public class LeaderBoard : MonoBehaviour
             }
 
             Debug.Log("successfully started LootLocker session");
+            LoadScores();
         });
     }
 

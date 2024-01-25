@@ -8,7 +8,18 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     private bool panelOpened = false;
-    
+    public AudioSource audioData;
+
+    void Start()
+    {
+        audioData.Play();
+    }
+
+    public void PlayAudioClip(AudioSource audio)
+    {
+        audio.Play();
+    }
+
     public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
