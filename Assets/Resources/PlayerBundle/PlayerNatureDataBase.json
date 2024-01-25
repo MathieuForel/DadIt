@@ -2,13 +2,34 @@
   "dataBase":
   [
     {
-      "sentence": "carrot"
+      "sentence": "If you want to grow a fungi,\n you must give it as *mushroom* as possible"
     },
     {
-      "sentence": "nuclear power plant is the way"
+      "sentence": "I wanted to grow some herbs,\n but I couldn’t find the *thyme*"
     },
     {
-      "sentence": "die potato!"
+      "sentence": "Plants are so motivational:\n they're all about trust and *beleaf*"
+    },
+    {
+      "sentence": "I don't trust trees.\n They're too shady"
+    },
+    {
+      "sentence": "Keep acting like a nut,\n you'll definitely catch squirrels"
+    },
+    {
+      "sentence": "I always liked your birds puns,\n but you know,\n *toucan* play at that game"
+    },
+    {
+      "sentence": "Why don't oysters donate to charity?\n Cause they're *shellfish*"
+    },
+    {
+      "sentence": "My alligator asked me not to call,\n but then I just *cracked* and *dialed*"
+    },
+    {
+      "sentence": "What do you call a snowman with a six-pack?\n The *Abnominal* Snowman"
+    },
+    {
+      "sentence": "Why did the tomato turn red?\n Because it saw the salad dressing"
     }
   ]
 }

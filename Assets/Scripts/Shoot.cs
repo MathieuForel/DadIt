@@ -10,6 +10,9 @@ public class Shoot : MonoBehaviour
     private bool canShoot;
 
     public Camera cam;
+    public PlayerCamera pc;
+    
+    public Animator animator;
 
     private void Start()
     {
@@ -20,6 +23,7 @@ public class Shoot : MonoBehaviour
     void Update()
     {
         Shooting();
+        Aiming();
     }
     
     private IEnumerator ResetTrue()
@@ -44,5 +48,11 @@ public class Shoot : MonoBehaviour
                 StartCoroutine(ResetTrue());
             }
         }
+    }
+
+    void Aiming()
+    {
+        animator.SetBool("isAiming", Input.GetMouseButton(1));
+        pc.playerSens = Input.GetMouseButton(1) ? pc.maxSens / 5f : pc.maxSens;
     }
 }

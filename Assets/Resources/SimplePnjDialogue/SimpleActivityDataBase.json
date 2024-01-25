@@ -2,13 +2,34 @@
   "dataBase":
   [
     {
-      "sentence": "JohnBALLIN"
+      "sentence": "I'm thinking about dropping tennis..."
     },
     {
-      "sentence": "AnnaBALLIN"
+      "sentence": "Oh I gained so much weight..."
     },
     {
-      "sentence": "PeterBALLIN"
+      "sentence": "I'm getting bored of football..."
+    },
+    {
+      "sentence": "I should seriously slow down on beer..."
+    },
+    {
+      "sentence": "Maybe I should try to be vegetarian..."
+    },
+    {
+      "sentence": "Am I even good at baseball?"
+    },
+    {
+      "sentence": "I'm genuily scared of getting a checkup..."
+    },
+    {
+      "sentence": "Why is everything so big here?"
+    },
+    {
+      "sentence": "Turns out I'm allergic to PB&J..."
+    },
+    {
+      "sentence": "I figured I just can't stand Elvis..."
     }
   ]
 }

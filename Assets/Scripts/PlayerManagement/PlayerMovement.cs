@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO.IsolatedStorage;
-using TreeEditor;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -13,13 +12,8 @@ public class PlayerMovement : MonoBehaviour
         private float lastDesiredMoveSpeed;
         [SerializeField] private float moveSpeed;
         public float[] playerSpeeds = new float[6];
-        public bool isMoving = false;
-    
-    [Header("Dash Ability")]
-        public float dashSpeed;
-        public float dashTimeOut;
-        public bool canDash = true;
-        
+        public bool isMoving;
+
     [Header("GroundCheck")]
         public float groundDrag;
         [SerializeField] private float playerHeight;
@@ -35,15 +29,13 @@ public class PlayerMovement : MonoBehaviour
         public Rigidbody rb;
 
     [Header("Mojoke")] 
+        public bool isMojo;
         public float mojoDuration;
-        private int beerNum;
-        private bool isMojo = false;
 
     [Header("Miscs")] 
         public float verticalInput;
         public float horizontalInput;
         public Vector3 moveDirection;
-        public Vector3 scale;
 
     void Awake()
     {
@@ -54,8 +46,6 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        
-        scale = transform.localScale;
     }
     
     void Update()
@@ -65,7 +55,8 @@ public class PlayerMovement : MonoBehaviour
         
         PlayerInput();
         playerSM.Update();
-        CheckMojos();
+        
+        playerSpeeds[0] = isMojo ? 12f : 8f;
     }
 
     void FixedUpdate()
@@ -99,31 +90,5 @@ public class PlayerMovement : MonoBehaviour
         moveDirection *= 6f;
 
         //rb.useGravity = !OnSlope() && !isWallRunning;
-    }
-
-    void CheckMojos()
-    {
-        if (isMojo)
-        {
-            playerSpeeds[0] = 10f;
-        }
-        else
-        {
-            playerSpeeds[0] = 8f;
-        }
-    }
-
-    private void OnTriggerEnter(Collider collision)
-    {
-        if (!isMojo && collision.gameObject.CompareTag("Beer"))
-        {
-            Destroy(collision.gameObject);
-
-            beerNum++;
-            if (beerNum == 4)
-            {
-                isMojo = true;
-            }
-        }
     }
 }

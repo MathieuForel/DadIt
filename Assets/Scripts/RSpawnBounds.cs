@@ -17,47 +17,46 @@ public class RSpawnBounds : MonoBehaviour
     [Space]
     
     public GameObject[] bundles;
-    public int bundleNum;
 
-    public int[] objectNum = new int[]{ 0, 0, 0};
+    public int[] bundleNum;
     
     // Start is called before the first frame update
     void Start()
     {
-        propsNum = Random.Range(4, 6);
-        bundleNum = Random.Range(2, 5);
-        
-        //Instantiate Beers
-        for (int i = 0; i < propsNum; i++)
+        propsNum = Random.Range(2, 3);
+        for (int i = 0; i < 3; i++)
         {
-            spawnPoint = GetRandomPosition();
-            
-            var spawned = Instantiate(props, spawnPoint, Quaternion.identity);
+            bundleNum[i] = Random.Range(2, 4);
         }
-        
-        //Instantiate Bundles
-        for (int i = 0; i < bundleNum*3; i++)
+
+        for (int i = 0; i < 3; i++) // 3 zones
         {
-            spawnPoint = GetRandomPosition();
+            //Instantiate Beers
+            for (int x = 0; x < propsNum; x++)
+            {
+                spawnPoint = GetRandomPosition(i);
+                
+                var spawned = Instantiate(props, spawnPoint, Quaternion.identity);
+            }
             
-            var spawned = Instantiate(bundles[Random.Range(0, 3)], spawnPoint, Quaternion.identity);
+            //Instantiate Bundles
+            for (int z = 0; z < bundleNum[i]; z++)
+            {
+                spawnPoint = GetRandomPosition(i);
+                
+                var spawned = Instantiate(bundles[z], spawnPoint, Quaternion.identity);
+                spawned.transform.position = spawnPoint;
+            }
         }
     }
 
-    Vector3 GetRandomPosition()
+    Vector3 GetRandomPosition(int index)
     {
-        int random = Random.Range(0, spawnArea.Length);
-        if (Mathf.Min(objectNum) + 1 < Mathf.Max(objectNum))
-        {
-            random = Mathf.Min(objectNum);
-        }
-        
-        objectNum[random]++;
-        Collider randomArea = spawnArea[random];
+        Collider randomArea = spawnArea[index];
         
         float x = Random.Range(randomArea.bounds.min.x, randomArea.bounds.max.x);
-        float z = Random.Range(randomArea.bounds.min.x, randomArea.bounds.max.x);
-            
+        float z = Random.Range(randomArea.bounds.min.z, randomArea.bounds.max.z);
+        
         return new Vector3(x, randomArea.bounds.max.y, z);
     }
 }
