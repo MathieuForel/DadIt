@@ -49,7 +49,7 @@ public class PlayerBundle : MonoBehaviour
         }
 
         
-        if(Input.GetKeyDown(KeyCode.Mouse1)) ShootBundleJoke();
+        if(Input.GetKeyDown(KeyCode.Mouse0)) ShootBundleJoke();
         if(Input.GetKeyDown(KeyCode.V))
         {
             for(var i = this.transform.childCount - 1; i >= 0; i--)
@@ -90,10 +90,11 @@ public class PlayerBundle : MonoBehaviour
 
         randomOffset = new Vector3(Random.Range(-2f, 3f), Random.Range(-2f, 3f), Random.Range(-2f, 3f));
 
-        textProjectile = Instantiate(textProjectilePrefab, this.transform.position + textProjectilePrefab.transform.position, Quaternion.identity * textProjectilePrefab.transform.rotation, this.transform);
+        textProjectile = Instantiate(textProjectilePrefab, this.transform.position, this.gameObject.transform.rotation);
+        //textProjectile.transform.localRotation *= textProjectilePrefab.transform.rotation;
         textProjectile.GetComponent<TextMesh>().text = playerJson.dataBase[randomJoke].sentence;
-        textProjectile.GetComponent<Rigidbody>().AddExplosionForce(explosionForce, this.transform.position, explosionRadius);
-        textProjectile.GetComponent<Rigidbody>().AddExplosionForce(explosionForce2, textProjectile.transform.position - offset + randomOffset, explosionRadius2);
+        textProjectile.GetComponent<Rigidbody>().AddExplosionForce(explosionForce, this.transform.position - this.transform.forward * 2, explosionRadius);
+        //textProjectile.GetComponent<Rigidbody>().AddExplosionForce(explosionForce2, textProjectile.transform.position - this.transform.forward/*- offset + randomOffset*/, explosionRadius2);
         textProjectile.GetComponent<ProjectileTextBundleInfo>().textBundle = bundleSelected;
     }
 }

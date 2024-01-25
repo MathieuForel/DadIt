@@ -27,7 +27,7 @@ public class EnnemyBundle : MonoBehaviour
     {
         topicList = Resources.LoadAll<TextAsset>("SimplePnjDialogue");
         if(isComplex) complexResponse = Resources.Load<TextAsset>("ComplexPnjDialogue/ComplexPeopleDataBase");
-        playerBundle = GameObject.FindWithTag("Player").GetComponent<PlayerBundle>();
+        playerBundle = GameObject.FindWithTag("MainCamera").GetComponent<PlayerBundle>();
     }
 
     public void Start()
