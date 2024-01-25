@@ -57,6 +57,6 @@ public class RSpawnBounds : MonoBehaviour
         float x = Random.Range(randomArea.bounds.min.x, randomArea.bounds.max.x);
         float z = Random.Range(randomArea.bounds.min.z, randomArea.bounds.max.z);
         
-        return new Vector3(x, randomArea.bounds.max.y +0.5f, z);
+        return new Vector3(x, randomArea.bounds.max.y +1f, z);
     }
 }
